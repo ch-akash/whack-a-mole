@@ -1,0 +1,6 @@
+{
+    "testFiles": "**/*.{feature,features}",
+    "video": false,
+    "viewportHeight": 660,
+    "viewportWidth": 1200
+}

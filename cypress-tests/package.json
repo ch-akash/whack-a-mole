@@ -1,0 +1,27 @@
+{
+  "name": "cypress-tests",
+  "version": "1.0.0",
+  "description": "Test repo for whack-a-mole game",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome"
+  },
+  "author": "akash",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "./reporting/cucumber-json",
+      "filePrefix": "test-report-",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

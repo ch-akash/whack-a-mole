@@ -1,0 +1,343 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Test various constraints related to game",
+    "line": 1,
+    "id": "test-various-constraints-related-to-game",
+    "tags": [],
+    "uri": "validations.feature",
+    "elements": [
+      {
+        "id": "test-various-constraints-related-to-game;box-default-location-validation-before-any-user-interaction",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Box default location validation before any user interaction",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "app is loaded",
+            "result": {
+              "status": "passed",
+              "duration": 967000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "box should be at initial location",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "box height should be \"100px\" and width should be \"100px\"",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "box should be clickable",
+            "result": {
+              "status": "passed",
+              "duration": 117000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-various-constraints-related-to-game;user-idle-state-test-before-first-mouse-click",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "User idle state test before first mouse click",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "app is loaded",
+            "result": {
+              "status": "passed",
+              "duration": 344000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "box location should not change after timeout",
+            "result": {
+              "status": "passed",
+              "duration": 10073000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-various-constraints-related-to-game;user-idle-state-test-after-first-mouse-click",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "User idle state test after first mouse click",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "app is loaded",
+            "result": {
+              "status": "passed",
+              "duration": 349000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user has clicked the box for 1 time",
+            "result": {
+              "status": "passed",
+              "duration": 214000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "user is idle for 11 seconds",
+            "result": {
+              "status": "passed",
+              "duration": 11011000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "box position should reset according to window configuration",
+            "result": {
+              "status": "passed",
+              "duration": 66000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-various-constraints-related-to-game;mouse-click-outside-the-box",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Mouse click outside the box",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "app is loaded",
+            "result": {
+              "status": "passed",
+              "duration": 329000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "box should be clickable",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "click at fixed location outside the box",
+            "result": {
+              "status": "passed",
+              "duration": 106000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "after mouse click current box location should not be same as previous location",
+            "result": {
+              "status": "passed",
+              "duration": 124000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-various-constraints-related-to-game;box-ui-characterstics-validations",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Box UI characterstics validations",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "app is loaded",
+            "result": {
+              "status": "passed",
+              "duration": 275000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "height",
+                      "width",
+                      "colour",
+                      "cursor"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "100px",
+                      "100px",
+                      "rgb(255, 160, 0)",
+                      "pointer"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "validate box UI data",
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-various-constraints-related-to-game;box-location-validation-after-user-has-made-multiple-clicks",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Box location validation after user has made multiple clicks",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "app is loaded",
+            "result": {
+              "status": "passed",
+              "duration": 278000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "box should be clickable",
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "after mouse click current box location should not be same as previous location",
+            "result": {
+              "status": "passed",
+              "duration": 115000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-various-constraints-related-to-game;sanity-after-too-many-sequential-mouse-clicks-on-box",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Sanity after too many sequential mouse clicks on box",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "app is loaded",
+            "result": {
+              "status": "passed",
+              "duration": 280000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "user has clicked the box for 40 time",
+            "result": {
+              "status": "passed",
+              "duration": 3648000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "box should be clickable",
+            "result": {
+              "status": "passed",
+              "duration": 86000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "user is idle for 11 seconds",
+            "result": {
+              "status": "passed",
+              "duration": 11012000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "box position should reset according to window configuration",
+            "result": {
+              "status": "passed",
+              "duration": 75000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
